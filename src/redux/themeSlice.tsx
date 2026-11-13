@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
+
 import type { ThemeInitialState } from "../type/themeType";
 const themeData = localStorage.getItem("theme") || "light";
 export const initialState: ThemeInitialState = {

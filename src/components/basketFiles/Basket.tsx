@@ -10,7 +10,7 @@ import {
   removeProduct,
   toggleBasket,
 } from "../../redux/basketSlice";
-import { useEffect } from "react";
+
 function Basket() {
   const { basket } = useSelector((state: RootState) => state.basket);
   const { basketState } = useSelector((state: RootState) => state.basket);

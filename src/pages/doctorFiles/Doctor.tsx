@@ -1,4 +1,3 @@
-import React from "react";
 import MainHealth from "../../components/main/MainHealth";
 import "./doctor.css";
 function Doctor() {

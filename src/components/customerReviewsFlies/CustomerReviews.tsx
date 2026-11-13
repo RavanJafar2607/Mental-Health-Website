@@ -5,7 +5,7 @@ import "./CustomerReviews.css";
 import { useState } from "react";
 function CustomerReviews() {
   const [currentIndex, SetCurrentIndex] = useState(0);
-  const [photoArray, SetPhotoArray] = useState([
+  const photoArray = [
     {
       id: 1,
       image: "/download.png",
@@ -30,7 +30,7 @@ function CustomerReviews() {
       quis. Quam enim tortor. Eu sitproin amet quis malesuada vitae elit.`,
       date: "26 June, 2022",
     },
-  ]);
+  ];
   const nextUser = () => {
     SetCurrentIndex((prevIndex) => {
       if (photoArray.length - 1 === prevIndex) {

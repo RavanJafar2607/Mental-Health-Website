@@ -7,7 +7,7 @@ import Contact from "./components/contactFiles/Contact";
 import Footer from "./components/footerFiles/Footer";
 import Doctor from "./pages/doctorFiles/Doctor";
 import Home from "./pages/homeFiles/Home";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import Medicines from "./pages/medicinesFiles/Medicines";
 import Basket from "./components/basketFiles/Basket";
 import type { RootState } from "./redux/store";

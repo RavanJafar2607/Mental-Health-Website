@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../loginFiles/login.css";
 import { TiArrowBack } from "react-icons/ti";
 import { CiLock } from "react-icons/ci";

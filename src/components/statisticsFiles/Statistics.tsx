@@ -1,4 +1,3 @@
-import { FaPlus } from "react-icons/fa";
 import "./statistics.css";
 function Statistics() {
   return (
