@@ -1,0 +1,107 @@
+.contactSec {
+  position: relative;
+  left: 70px;
+  width: 1000px;
+  height: 450px;
+  background-color: var(--contact-bg);
+  border-radius: 30px;
+  margin-top: 20%;
+}
+.conactItems {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+}
+.contactText {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactText .oneP {
+  color: var(--color2);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2%;
+}
+.contactText p {
+  color: var(--color);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2%;
+}
+.conactItems h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--color);
+}
+.photos {
+  display: flex;
+  align-items: center;
+}
+.photos img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000000;
+}
+
+.photos img:not(:first-child) {
+  margin-left: -25px;
+}
+.photos p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color);
+  margin-left: 10px;
+}
+.contactInput {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contactInput input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 150%;
+  border: 1px solid transparent;
+}
+.contactInput input::placeholder {
+  color: var(--text-color2);
+}
+.contactInput button {
+  background-color: var(--logo-color);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--color);
+  font-size: 24px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1024px) {
+  .contactSec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    position: static;
+    margin-top: 50px;
+  }
+  .conactItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    gap: 20px;
+  }
+  .contactInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

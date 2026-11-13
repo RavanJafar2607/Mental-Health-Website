@@ -1,0 +1,167 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--bg);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+.headerText {
+  margin-left: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: bold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--logo-color);
+}
+nav {
+  display: flex;
+  gap: 40px;
+  padding: 10px;
+  align-items: center;
+}
+nav .headerLink {
+  color: var(--text-color);
+  font-size: 15px;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 2%;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+nav .headerLink:hover {
+  background-color: var(--logo-color);
+  color: white;
+}
+.headerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: var(--text-color);
+}
+.authCont {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.authBtn {
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-style: bold;
+  font-weight: 600;
+  size: 24px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: var(--text-color);
+  transition: all ease 0.5s;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.authBtn:hover {
+  background-color: var(--logo-color);
+  color: var(--color);
+}
+.themeBtn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 17px;
+}
+.baskets {
+  position: relative;
+}
+.basketLength {
+  position: absolute;
+  top: -14px;
+  left: 10px;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.wishlists {
+  position: relative;
+}
+.wishlistLength {
+  position: absolute;
+  top: -14px;
+  left: 10px;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.authCont p {
+  font-size: 15px;
+  font-weight: 900;
+  color: red;
+}
+.authCont p span {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.hamburgerMenu {
+  display: none;
+}
+.hamburgerMenu button {
+  color: var(--text-color);
+  font-size: 23px;
+  font-weight: 900;
+  background: transparent;
+  border: 1px solid transparent;
+  margin: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .hamburgerMenu {
+    display: block;
+    z-index: 999;
+  }
+  .navBar {
+    position: static;
+  }
+  .navBar nav {
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    padding: 15px 0px;
+    background-color: var(--bg);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  .menuGizlet {
+    transition: all ease 1s;
+    visibility: hidden;
+  }
+  .menuGoster {
+    transition: all ease 1s;
+    visibility: visible;
+  }
+}

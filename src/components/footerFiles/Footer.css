@@ -1,0 +1,79 @@
+footer {
+  width: 1057px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+  gap: 100px;
+  margin-top: 10%;
+  background-color: var(--footer-bg);
+}
+.footerLogoOxcare p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color2);
+  line-height: 100%;
+}
+.socialIcon {
+  display: flex;
+  gap: 10px;
+}
+.socialIcon a {
+  font-size: 25px;
+  color: var(--text-color);
+  transition: all ease 0.5s;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+.socialIcon a:hover {
+  transform: scale(1.2);
+  background-color: var(--logo-color);
+  color: var(--color);
+}
+.footerLogoOxcare h2 {
+  color: var(--logo-color);
+  font-weight: 700;
+  font-size: 28px;
+  font-style: bold;
+}
+.footerLogo h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 24px;
+}
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.links {
+  color: var(--text-color);
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+.links:hover {
+  background-color: var(--logo-color);
+  color: var(--color);
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 30px;
+    width: 100%;
+  }
+}

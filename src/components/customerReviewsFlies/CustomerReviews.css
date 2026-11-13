@@ -1,0 +1,138 @@
+.customerSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+}
+.customerReviewsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.customerReviewsHeader h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 24px;
+}
+.customerReviewsHeader p {
+  color: var(--text-color2);
+  font-weight: 400;
+  font-size: 16px;
+}
+.review {
+  display: flex;
+  gap: 50px;
+}
+.useDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+.namePh {
+  display: flex;
+  gap: 10px;
+}
+.nameDate {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nameDate h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.nameDate p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color2);
+}
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(245, 191, 0, 1);
+}
+.useText p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color2);
+}
+.namePh img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.review button {
+  position: relative;
+  top: 50px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  height: 100px;
+  width: max-content;
+  transition: all ease 0.2s;
+}
+.arrow:hover {
+  color: var(--logo-color);
+}
+.arrow:active {
+  transform: scale(1.1);
+}
+.pText {
+  white-space: pre-line;
+}
+@media screen and (max-width: 1024px) {
+  .customerSec {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  .review {
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  .useDetails {
+    width: 100%;
+    height: auto; /* Sabit hündürlük götürüldü ki, mətn sığışsın */
+    padding: 15px;
+  }
+
+  .customerReviewsHeader h2 {
+    font-size: 20px;
+  }
+
+  .customerReviewsHeader p {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .nameDate h4 {
+    font-size: 17px;
+  }
+
+  .nameDate p {
+    font-size: 13px;
+  }
+  .text {
+    width: 100px;
+    height: 160px;
+  }
+  .pText {
+    font-size: 13px;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .namePh img {
+    width: 45px;
+    height: 45px;
+  }
+}

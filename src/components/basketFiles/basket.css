@@ -1,0 +1,143 @@
+.itemConatiner {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  width: 450px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 998;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  align-items: center;
+}
+.basketOverlay {
+  background-color: rgb(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 999;
+}
+
+.basketHeader {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+  background-color: var(--logo-color);
+  padding: 20px;
+}
+.basketHeader p {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 800;
+}
+.basketHeader button {
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.itemHeader {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  width: 100%;
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid var(--border);
+  width: 250px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.itemHeader img {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 998;
+  border-radius: 20px;
+}
+.itemHeader button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 100px;
+  left: 350px;
+  right: 0px;
+  z-index: 999;
+  background: transparent;
+  color: var(--color);
+  border: 1px solid transparent;
+  width: max-content;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.itemHeader button:hover {
+  background-color: var(--logo-color);
+  color: red;
+}
+.open {
+  visibility: visible;
+}
+.close {
+  visibility: hidden;
+}
+.quantityButton {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.quantityButton button {
+  background: transparent;
+  color: var(--color);
+  border: 1px solid transparent;
+  width: max-content;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.quantityButton button:hover {
+  background-color: var(--logo-color);
+  color: red;
+}
+
+.basketFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--logo-color);
+  width: 100%;
+  font-size: 20px;
+  margin-top: auto;
+}
+.emptyDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.emptyDiv p {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--color);
+}
